@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+</head>
+
+<body>
+
+
+  <main>
+    <section id="partie_gauche">
+      <div id="entete">
+        <h1 id="titre_principal"> Mortgage Calculator</h1>
+        <a href="#" id="clear_all">Clear all</a>
+      </div>
+      <form method="post" action="./traitement.php" id="formulaire">
+        <div id="input_1" class="input1">
+          <label for="input1">Mortgage Amount</label>
+          <input type="number" id="input1" class="">
+          <p id="livre_sterling">£</p>
+          <small class="small">This field is required</small>
+        </div>
+
+        <div id="input2_3">
+          <div class="input2">
+            <label for="input2"> Mortgage Term</label>
+            <input type="number" id="input2">
+            <p id="years" class="years_error">years</p>
+            <small class="small">This field is required</small>
+          </div>
+
+          <div class="input3">
+            <label for="input3">Interest Rate</label>
+            <input type="number" id="input3">
+            <p id="pourcent">%</p>
+            <small class="small" _>This field is required</small>
+          </div>
+        </div>
+        </div>
+
+        <div class="input4">
+          <label for="input4">Mortgage type</label>
+          <div id="input_4" class="default_radio">
+            <input type="radio" name="input4" id="input4">
+            <p id="p_input4">Repayment</p>
+          </div>
+          <div id="input_5" class="default_radio">
+            <input type="radio" name="input4" id="input5">
+            <p id="p_input4">Interest only</p>
+          </div>
+          <small class="small">This field is required</small>
+        </div>
+
+        <button type="submit" value="Calculate Repayment" id="button_submit"><img
+            src="./assets/images/icon-calculator.svg" alt="Une calculatrice en png" id="img_submit"><span
+            id="texte_button">Calculate Repayments</span></button>
+      </form>
+
+
+
+    </section>
+    <section id="partie_droite" class="">
+      <img src="./assets/images/illustration-empty.svg" alt="image d'une calculatrice" class="img_partie_droite">
+      <div class="partie_droite">
+        <h1 id="h1_partie_droite">Results shown here</h1>
+
+        <p id="p_partie_droite">Complete the form and click “calculate repayments” to <br>
+          see what
+          your monthly repayments would be.</p>
+      </div>
+    </section>
+
+    <section id="resultat" class="invisible">
+
+      <div class="resultat">
+        <h1>Your results</h1>
+        <p> Your results are shown below based on the information you provided.
+          To adjust the results, edit the form and click “calculate repayments” again.</p>
+
+        <div id="result_container">
+          <p>Your monthly repayments</p>
+          <p id="monthly_repayments">£1,797.74</p>
+
+          <hr>
+
+          <div id="div_repay_over_the_term">
+            <p id="repay_over_the_term">Total you'll repay over the term</p>
+            <p id="over_the_term">£539,322.94</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Lensky001">Berlensky St Saintil</a>.
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
